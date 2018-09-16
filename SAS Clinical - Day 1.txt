@@ -1,0 +1,53 @@
+-> BMI
+-> Provider Re.
+-> Cancer/survival analysis
+-> Impact analysis
+
+==============================================
+****AS® Certified Clinical Trials Programmer Using SAS®9  ***
+
+1. Validates a candidates' ability to apply SAS® programming skills to clinical trials data
+
+
+Successful candidates should have experience in:
+-------------------------------
+1. Clinical trials process 					: Model 
+2. Accessing, managing and transforming clinical trials data
+ Read(load) from ther sources -> 						Clean/Update/Condition/Where/filter/sorting/group 
+				 			
+3. Statistical procedures and macro programming
+	->Automate the process 		
+4. Reporting clinical trials results.
+	
+5. Validating clinical trial data reporting.
+
+
+The schedule of events displayed on this page are for full-time program registration. If interested in part-time programs, please view the part-time programs by location or register here.
+
+This five week extensive bootcamp training program will not only cover detail about data manipulation, generation of tables and graphs but it also make you industry ready with clinical research theory and case studies based on phase trials. This program also help candidate in preparation of SAS Certified Clinical SAS Programmer credentials.
+
+Participants get one complimentary attempt for Base SAS and Advanced SAS Certification Exams.
+
+Participants needs to complete 7 days project as part of their bootcamp. The project includes following topics
+
+Clinical Research Theory (1 Day)
+
+Introduction to clinical research
+Detail about data generation in clinical research
+Familiarize with frequently used Clinical Trial terminology and GCP (Good Clinical Practices)
+Overview of LOCF, BOCF & Change from Baseline
+Clinical Research Project (Phase Trial) (6 Days)
+
+Creation of Analysis dataset specification
+Generation of Analysis dataset
+Generation of following tables for a given studies (Any One)
+Adverse event (AE)
+Demographic (DM)
+Medical History (MH)
+Lab data (LB)
+Learn how to
+clinical trials process
+accessing, managing, and transforming clinical trials data
+statistical procedures and macro programming
+reporting clinical trials results
+validating clinical trial data reporting.
