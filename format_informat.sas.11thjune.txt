@@ -1,0 +1,92 @@
+
+/*
+format and informat
+*/
+
+proc print data = sashelp.class;
+format age dollar6. Height dollar6. Weight dollar.;
+run;
+
+
+proc print data = sashelp.air;
+
+run;
+
+proc print data = sashelp.air;
+format date mmddyy.;
+run;
+
+proc print data = sashelp.air;
+format date yymmdd.;
+run;
+
+
+Proc Print Data=sashelp.class;
+
+Run;
+
+/*
+custom foramt 
+*/
+
+Proc Format;
+	Value 
+			a low-14 = 'teen'			
+			  15-High =  'old';
+
+	 Value	$gen 'M' ='Male'
+	 		     'F' ='Female';
+Run;
+Proc Print Data=sashelp.class;
+Format age 	a. sex $gen.;
+Run;
+
+/*
+Question :
+sid  sname  hs es cs ms 
+
+
+
+calculate :
+	total avg 
+	then show grade using proc format
+*/
+
+data student;
+input sid sname$ hs es cs ms;
+datalines;
+1 KASHISH 89 86 90 67
+2 MOKSH 98 67 89 90
+3 KOMAL 89 76 91 83
+4 MIHIKA 94 95 87 89
+5 MOHIT 89 98 78 77
+;
+run;
+DATA STUDENT;
+SET STUDENT;
+SUM=hs+es+cs+ms;
+RUN;
+
+
+	
+proc print; /* default dataset is last */
+run;
+
+data student;
+set student;
+avg=sum/4;
+run;
+proc print;
+run;
+
+proc format;
+ value GRADE low-33 ='E'
+       34-50='D'
+	   51-70='C'
+	   70-80='B'
+	   80-90='A'
+	   91-100='A+';
+RUN;
+PROC PRINT;
+FORMAT AVG GRADE.;
+RUN;
