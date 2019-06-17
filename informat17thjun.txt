@@ -1,0 +1,51 @@
+/*
+informat : change format to in
+
+	1-jan-1960
+
+*/
+
+data new;
+set sashelp.buy;
+run;
+proc print data =new;
+informat date .;
+run;
+
+
+
+data newdata;
+input id$ name$ gender$ sal dollar5.;
+datalines;
+001 raman male $55555
+002 jatin male $44444
+0003 monika female $444
+;
+run;
+proc print;
+run;
+
+proc sql;
+
+	select sum(sal) from newdata;
+quit;
+
+
+/* univariate 
+ this works of all numeric column
+*/
+
+proc univariate data = sashelp.class;
+
+run;
+
+
+proc sql;
+
+	select max(age)- min(age) from sashelp.class;
+	
+quit;
+proc sql;
+
+	select min(age) from sashelp.class;
+quit;
