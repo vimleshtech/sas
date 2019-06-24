@@ -1,0 +1,75 @@
+
+data employee;
+input name$ id; 
+cards;
+shikha 198
+roshan 122
+rekha 125
+tina 178
+rohit 345
+;
+run;
+proc sort data=employee;
+by id;
+run;
+proc print data=employee;
+run;
+data salary;
+input id salary;
+cards;
+198 34290
+134 76545
+345 67543
+454 56432
+125 65219
+;
+run;
+proc sort data=salary;
+by id;
+run;
+proc print;
+run;
+
+data data3;
+merge salary employee ;
+by id;
+run;
+proc print data=data3;
+run;
+data employee;
+input name$ id; 
+cards;
+shikha 198
+roshan 122
+rekha 125
+tina 178
+rohit 345
+;
+run;
+proc sort data=employee;
+by id;
+run;
+proc print data=employee;
+run;
+data salary;
+input id salary;
+cards;
+198 34290
+134 76545
+345 67543
+454 56432
+125 65219
+;
+run;
+proc sort data=salary;
+by id;
+run;
+proc print;
+run;
+
+data data3;
+merge salary employee ;
+by id;
+run;
+proc print data=data3;
+run;
